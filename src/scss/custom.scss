@@ -1,0 +1,86 @@
+// Colors
+$color-1: #5BBA6F;
+$color-2: #3FA34D;
+$color-3: #2A9134;
+$color-4: #137547;
+$color-5: #054A29;
+
+$blue: #0d6efd !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #019b53 !default;
+$teal: #20c997 !default;
+$cyan: #0dcaf0 !default;
+
+// Theme
+$primary: $color-1;
+$secondary: $color-5;
+
+
+// Typography
+$headings-color: $primary;
+$headings-font-weight: 600;
+
+// // Links
+// $navbar-light-color: $secondary;
+// $navbar-light-active-color: $primary;
+
+// // Forms
+// $input-group-addon-color: $primary;
+// $input-group-addon-bg: transparent;
+// $form-label-font-size: .9rem;
+// $form-label-font-weight: 300;
+// //$input-focus-border-color: $color-3;
+
+// // Dropdowns
+// //$dropdown-divider-bg: $primary;
+
+// // Carousel
+// $carousel-transition-duration: 1s;
+
+
+// Import the functions and variables
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$custom-theme-colors: (
+  "color1": #030420,
+  "color2": #40297B,
+  "color3": #BA01FF,
+  "color4": #FEFCFE,
+  "color5": #313131
+);
+
+// // Alerts 
+// $alert-padding-y: map-get($spacers, 2);
+// $alert-padding-x: map-get($spacers, 3);
+
+// // Buttons + Inputs
+// $btn-border-width: map-get($border-widths, 2);
+
+
+// $theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// // Forms(with variables)
+// $input-padding-y-lg: $input-btn-padding-y-lg * 1.2;
+// $input-padding-x-lg: $input-btn-padding-x-lg * 1.2;
+// $input-font-size-lg: $input-btn-font-size-lg * .8;
+
+// // Pagination
+// //$pagination-border-width: 2px;
+// $pagination-border-color: lighten($primary, 50%);
+
+
+// // Tabs
+// $nav-tabs-border-color: $primary;
+// $nav-tabs-link-active-color: $primary;
+// $nav-tabs-link-active-border-color: $primary $primary transparent;
+// $nav-underline-link-active-color: $primary;
+// $nav-underline-border-width: .2rem;
+
+// Import Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";

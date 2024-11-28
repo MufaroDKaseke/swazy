@@ -1,0 +1,18 @@
+/* Main Stylesheet */
+
+@import 'variables';
+@import 'base';
+@import 'mixins';
+
+
+// Hero
+.hero {
+  background: linear-gradient(rgba(0 0 0 / 50%),rgba(0 0 0 / 50%)), url('../../public/img/autumn.jpg');
+  background-size: cover;
+  background-position: center;
+  
+  &-title {
+    font-size: 7rem;
+    font-family: "Road Rage", sans-serif;
+  }
+}
