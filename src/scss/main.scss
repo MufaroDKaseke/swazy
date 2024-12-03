@@ -4,15 +4,64 @@
 @import 'base';
 @import 'mixins';
 
+// Open Menu Button
+#openMenu {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1;
+}
 
 // Hero
 .hero {
-  background: linear-gradient(rgba(0 0 0 / 50%),rgba(0 0 0 / 50%)), url('../../public/img/autumn.jpg');
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0 0 0 / 60%),rgba(0 0 0 / 60%)), url('../../public/img/autumn.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: heroBgZoom 15s infinite alternate ease-in-out;
+  }
+
+  > .container {
+    position: relative;
+    z-index: 1;
+  }
   
   &-title {
     font-size: 7rem;
     font-family: "Road Rage", sans-serif;
+  }
+
+  &-socials {
+    a {
+      font-size: 1.5rem;
+    }
+  }
+
+  &-album {
+    overflow-y: auto;
+  }
+
+  &-album-song {
+    i {
+      font-size: 1.2rem;
+
+      &::before {
+        vertical-align: middle;
+      }
+    }
+
+    span {
+      font-size: .9rem;
+      vertical-align: middle;
+    }
   }
 }
